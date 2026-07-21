@@ -12,3 +12,10 @@ resource "azurerm_storage_container" "example" {
   storage_account_id    = azurerm_storage_account.example.id
   container_access_type = "private"
 }
+
+
+resource "azurerm_storage_container" "example1" {
+  name                  = "statecontainer"
+  storage_account_id    = azurerm_storage_account.example.id
+  container_access_type = "private"
+}
