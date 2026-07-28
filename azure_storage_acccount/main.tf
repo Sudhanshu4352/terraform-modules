@@ -7,21 +7,4 @@ resource "azurerm_storage_account" "example" {
 
 }
 
-resource "azurerm_storage_container" "example" {
-  name                  = "statecontainer"
-  storage_account_id    = azurerm_storage_account.example.id
-  container_access_type = "private"
-}
-
-
-resource "azurerm_storage_container" "example1" {
-  name                  = "statecontainer"
-  storage_account_id    = azurerm_storage_account.example.id
-  container_access_type = "private"
-}
-
-resource "azurerm_storage_container" "example2" {
-  name                  = "statecontainer2"
-  storage_account_id    = azurerm_storage_account.example.id
-  container_access_type = "private"
 }
