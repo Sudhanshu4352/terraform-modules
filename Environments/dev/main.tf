@@ -16,8 +16,3 @@ module "subnets" {
   subnets = var.subnets
 }
 
-module "subnetstorage" {
-    depends_on = [ module.resource_group ]
-  source  = "../../azurerm_subnet"
-  subnets = var.subnets
-}
